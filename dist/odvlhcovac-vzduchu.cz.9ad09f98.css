@@ -5018,7 +5018,7 @@ b,
 }
 
 .heading-container {
-  background-image: url("hero.0f0b5fd4.jpg");
+  background-image: url("hero512.62c92c4c.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -5099,9 +5099,17 @@ b,
     padding-left: var(--size-7);
     padding-right: var(--size-7);
   }
+
+  .heading-container {
+    background-image: url("hero.0f0b5fd4.jpg");
+  }
 }
 @media (min-width: 60rem) {
-  .bg-hero {
+  .heading-container {
+    background: none;
+  }
+
+  .header-container {
     background-image: url("hero.0f0b5fd4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
