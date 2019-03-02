@@ -1,0 +1,182 @@
+$dark: #104665;
+$light: #fcfcfc;
+$light-secondary: #f5f5f5;
+$fade: #747474;
+$vivid: #bd0e15;
+
+$bg-dark: #3f7b9e;
+$bg-vivid: #bd0e15;
+$bg-dark-secondary: #2f5b75;
+$bg-light: #e7e7e7;
+$bg-light-secondary: #d9d9d9;
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: $light;
+  color: $dark;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.2em;
+  line-height: 2;
+  margin: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $vivid;
+}
+a.light,
+a.light:visited {
+  color: $light;
+}
+
+a:hover,
+a:active {
+  color: $vivid;
+  text-decoration: none;
+}
+
+a.light:hover,
+a.light:active {
+  color: $light;
+  text-decoration: none;
+}
+
+b,
+.b {
+  font-weight: 900;
+}
+
+.bg-light {
+  background-color: $bg-light;
+}
+.bg-light-secondary {
+  background-color: $light-secondary;
+}
+.bg-dark {
+  background-color: $bg-dark;
+}
+.bg-dark-secondary {
+  background-color: $bg-dark-secondary;
+}
+
+.bg-gray {
+  background-color: #717171;
+}
+
+.bg-green {
+  background-color: #428188;
+}
+
+.bg-vivid {
+  background-color: $bg-vivid;
+}
+.c-light {
+  color: $light;
+}
+
+.heading-container {
+  background-image: url("images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+@keyframes heading {
+  from {
+    opacity: 0;
+    transform: scale(2);
+    text-shadow: 0 0 50px #000000;
+  }
+  to {
+    opacity: 0.9;
+    transform: none;
+  }
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.2rem;
+}
+
+.w-limit {
+  max-width: 1124px;
+}
+
+.section-padding {
+  padding: var(--size-7) var(--size-5) var(--size-7) var(--size-5);
+}
+
+.button {
+  padding: var(--size-4);
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.button:hover {
+  background-color: hsla(0, 0%, 95%, 0.2);
+}
+
+.button:active {
+  background-color: hsla(0, 0%, 90%, 0.5);
+}
+
+.hero-button {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  text-transform: uppercase;
+  animation-name: heading;
+  animation-duration: 0.8s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+  border: 3px solid $vivid;
+}
+
+.hero-heading-secondary {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.padding {
+  padding: var(--size-5);
+}
+
+@media (min-width: 30rem) {
+  .section-padding {
+    padding-left: var(--size-6);
+    padding-right: var(--size-6);
+  }
+}
+
+@media (min-width: 45rem) {
+  .section-padding {
+    padding-left: var(--size-7);
+    padding-right: var(--size-7);
+  }
+}
+
+@media (min-width: 60rem) {
+  .bg-hero {
+    background-image: url("images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left var(--size-7) bottom 0;
+  }
+}

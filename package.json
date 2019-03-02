@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^9.4.8",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "sass": "^1.17.1"
+  },
+  "name": "odvlhcovac-vzduchu.cz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "beardcss": "^2.2.4"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist/* ./.cache/*",
+    "dev": "npm run clean && parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
