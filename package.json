@@ -15,6 +15,7 @@
   "scripts": {
     "clean-dev": "rm -rf ./dist/* ./.cache/*",
     "clean-build": "rm -rf ./build/* ./.cache/*",
+    "copy-files": "cp Sitemap.xml robots.txt .htaccess browserconfig.xml favicon.ico mstitle-150x150.png build",
     "dev": "npm run clean-dev && parcel index.html",
     "build": "npm run clean-build && parcel build index.html -d build"
   },

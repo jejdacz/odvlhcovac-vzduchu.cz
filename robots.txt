@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: http://www.odvlhcovac-vzduchu.cz/Sitemap.xml 
