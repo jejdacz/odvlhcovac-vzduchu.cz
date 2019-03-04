@@ -13,9 +13,10 @@
     "beardcss": "^2.2.4"
   },
   "scripts": {
-    "clean": "rm -rf ./dist/* ./.cache/*",
-    "dev": "npm run clean && parcel index.html",
-    "build": "parcel build index.html"
+    "clean-dev": "rm -rf ./dist/* ./.cache/*",
+    "clean-build": "rm -rf ./build/* ./.cache/*",
+    "dev": "npm run clean-dev && parcel index.html",
+    "build": "npm run clean-build && parcel build index.html -d build"
   },
   "keywords": [],
   "author": "",
