@@ -13,11 +13,11 @@
     "beardcss": "^2.2.4"
   },
   "scripts": {
-    "clean-dev": "rm -rf ./dist/* ./.cache/*",
+    "clean-dist": "rm -rf ./dist/* ./.cache/*",
     "clean-build": "rm -rf ./build/* ./.cache/*",
-    "copy-files": "cp Sitemap.xml robots.txt .htaccess browserconfig.xml favicon.ico mstitle-150x150.png build",
-    "dev": "npm run clean-dev && parcel index.html",
-    "build": "npm run clean-build && parcel build index.html -d build"
+    "copy-files": "cp ./src/.htaccess ./src/browserconfig.xml ./src/favicon.ico ./src/mstile-150x150.png ./src/robots.txt ./src/Sitemap.xml dist",
+    "dev": "npm run clean-dist && npm run copy-files && parcel watch ./src/* --public-url ./",
+    "build": "npm run clean-dist && npm run copy-files && parcel build  ./src/index.html"
   },
   "keywords": [],
   "author": "",

@@ -1,6 +1,6 @@
 .cache
 node_modules
-src
+res
 dist
 _postcss.config.js
 gulpfile.js

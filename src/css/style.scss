@@ -87,7 +87,7 @@ b,
 }
 
 .heading-container {
-  background-image: url("images/hero512.jpg");
+  background-image: url("/images/hero512.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -171,7 +171,7 @@ b,
     padding-right: var(--size-7);
   }
   .heading-container {
-    background-image: url("images/hero.jpg");
+    background-image: url("/images/hero.jpg");
   }
 }
 
@@ -181,7 +181,7 @@ b,
   }
 
   .header-container {
-    background-image: url("images/hero.jpg");
+    background-image: url("/images/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left var(--size-7) bottom 0;
