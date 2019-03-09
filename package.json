@@ -1,26 +1,34 @@
 {
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "autoprefixer": "^9.4.8",
     "cssnano": "^4.1.10",
+    "del": "^4.0.0",
     "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.11.0",
+    "readable-stream": "^3.2.0",
     "sass": "^1.17.1"
   },
   "name": "odvlhcovac-vzduchu.cz",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.html",
   "dependencies": {
     "beardcss": "^2.2.4"
   },
   "scripts": {
     "clean-dist": "rm -rf ./dist/* ./.cache/*",
-    "clean-build": "rm -rf ./build/* ./.cache/*",
     "copy-files": "cp ./src/.htaccess ./src/browserconfig.xml ./src/favicon.ico ./src/mstile-150x150.png ./src/robots.txt ./src/Sitemap.xml dist",
-    "dev": "npm run clean-dist && npm run copy-files && parcel watch ./src/* --public-url ./",
-    "build": "npm run clean-dist && npm run copy-files && parcel build  ./src/index.html"
+    "dev": "npm run clean-dist && npm run copy-files && parcel watch ./src/index.html --public-url ./",
+    "build": "npm run clean-dist && npm run copy-files && parcel build  ./src/index.html --public-url ./"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "Marek Mego",
+  "license": "MIT",
+  "description": "Rental service landing page"
 }

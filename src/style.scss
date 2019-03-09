@@ -1,3 +1,23 @@
+@import "./reboot.scss";
+@import "./cluster/cluster.scss";
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("Roboto-Black"), url("/fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("Roboto-Regular"),
+    url("/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 $dark: #104665;
 $light: #fcfcfc;
 $light-secondary: #f5f5f5;
