@@ -23,8 +23,8 @@
   },
   "scripts": {
     "clean-dist": "rm -rf ./dist/* ./.cache/*",
-    "copy-files": "cp ./src/.htaccess ./src/browserconfig.xml ./src/favicon.ico ./src/mstile-150x150.png ./src/robots.txt ./src/Sitemap.xml dist",
-    "dev": "npm run clean-dist && npm run copy-files && parcel watch ./src/index.html --public-url ./",
+    "copy-files": "cp ./src/.htaccess ./src/browserconfig.xml ./src/favicon.ico ./src/mstile-150x150.png ./src/og-image.jpg ./src/robots.txt ./src/Sitemap.xml dist",
+    "dev": "npm run clean-dist && npm run copy-files && parcel ./src/index.html --public-url ./",
     "build": "npm run clean-dist && npm run copy-files && parcel build  ./src/index.html --public-url ./"
   },
   "keywords": [],
