@@ -1,0 +1,13 @@
+# 1 Month for all your static assets
+ <filesMatch ".[a-z0-9]{8}.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|svg|map|swf|ttf)$">
+ Header set Cache-Control "max-age=31536000, public"
+ </filesMatch>
+
+ # 1 DAYS for rss feeds and robots
+ <filesMatch ".(xml|txt)$">
+ Header set Cache-Control "max-age=86400, public, must-revalidate"
+ </filesMatch>
+
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
